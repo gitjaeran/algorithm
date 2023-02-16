@@ -7,9 +7,11 @@ answer 빈 배열에 추가
 */
 
 function solution(arr1, arr2) {
-    var answer = [[]];
+    var answer = [];
+    
     for(let i=0; i<arr1.length; i++) {
-        answer[i] = []
+    console.log(answer[i], 'answer[i]') //undefined
+        answer[i] = [] //undefined라서 배열을 만들어주는건지?
         for(let a=0; a<arr1[i].length; a++){
             answer[i].push(arr1[i][a] + arr2[i][a])
         }
