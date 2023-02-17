@@ -20,8 +20,7 @@ function solution(participant, completion) {
         //만약 part[i]와 comp[i]가 같지 않다면
         if(part[i] !== comp[i]) {
             // console.log(part[i] !== comp[i]) //true
-            
-            //여기서 왜 없는 값이 자동출력될까?
+            console.log(part[i]) //명단 전체
             return part[i]
         }
     }
