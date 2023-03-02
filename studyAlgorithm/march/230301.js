@@ -6,10 +6,24 @@
 배열 arr의 원소의 크기 : 0보다 크거나 같고 9보다 작거나 같은 정수
 */
 
-function solution(arr) {    
-    return answer = Array.from(new Set(arr));
-    //[1,3,0,1]이 아니라 [1,3,0]만 나와서 문제임!
+//좋은 풀이 1
+function solution(arr) {
+    return arr.filter((element, index) => element !== arr[index + 1]);
 }
 
+//좋은 풀이 2
+// function solution(arr) {
+//     var answer = [arr[0]];
+//     for (let i=1; i<arr.length; i++) {
+//         // console.log(answer[answer.length - 1]) // 1 3 0 1
+//         // console.log(arr[i]) // 1 3 0 1
+//         if (answer[answer.length - 1] !== arr[i]) {
+//             answer.push(arr[i]);
+//         }
+//     }
+
+//     return answer;
+// }
+
 console.log(solution([1,1,3,3,0,1,1])) //[1,3,0,1]
-console.log(solution([4,4,4,3,3])) //	[4,3]
+// console.log(solution([4,4,4,3,3])) //	[4,3]
