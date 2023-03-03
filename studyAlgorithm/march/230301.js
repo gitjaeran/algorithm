@@ -8,10 +8,11 @@
 
 //좋은 풀이 1
 function solution(arr) {
+    //끝자리 1 누락 -> filter의 index를 잘 활용하자.
     return arr.filter((element, index) => element !== arr[index + 1]);
 }
 
-//좋은 풀이 2
+// 좋은 풀이 2
 // function solution(arr) {
 //     var answer = [arr[0]];
 //     for (let i=1; i<arr.length; i++) {
@@ -26,4 +27,4 @@ function solution(arr) {
 // }
 
 console.log(solution([1,1,3,3,0,1,1])) //[1,3,0,1]
-// console.log(solution([4,4,4,3,3])) //	[4,3]
+console.log(solution([4,4,4,3,3])) //	[4,3]
