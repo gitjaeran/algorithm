@@ -13,8 +13,8 @@ function solution(n) {
   //reverse() = 배열 역순 반환
   //join() = 구분자로 나뉜 배열 합침
   let answer = n.toString(3).split("").reverse().join("");
-
-  return parseInt();
+  //parseInt(str, radix) = 문자열을 특정 진수의 정수로 변환
+  return parseInt(answer, 3);
 }
 
 console.log(solution(45)); //7
